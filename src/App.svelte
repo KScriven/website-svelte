@@ -22,11 +22,7 @@
 	  max-width: 100%;
     background-color: black;
     color: white;
-    font-family: 'Rampart One', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-      sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    font-family: 'Rampart One';
     text-align: center;
 	}
   h1 {
