@@ -1,7 +1,8 @@
-html,
+html {
+  position: relative;
+}
 body {
   background-color: black;
-  position: relative;
 }
 
 a {

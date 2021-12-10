@@ -8,10 +8,10 @@
     <!-- <button type='button'>who am i?</button>
     <button type='button'>blogging</button>
     <button type='button'>contact me</button> -->
-
+    <p>
     <Blog></Blog>
     <Contact email={"kerryn.lloyd[at]gmail.com"}, linkedIn={"https://www.linkedin.com/in/kerrynscriven/"}></Contact>
-
+    </p>
     <footer>
       <p>you are always one decision away from a totally different life</p>
     </footer>
@@ -22,7 +22,7 @@
 	  max-width: 100%;
     background-color: black;
     color: white;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    font-family: 'Rampart One', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
       'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
       sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -30,8 +30,15 @@
     text-align: center;
 	}
   h1 {
-    font-family: 'Rampart One', cursive;
-    font-size: 10rem;
+    font-size: 5rem;
+  }
+
+  p {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
   /* button {
