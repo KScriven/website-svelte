@@ -23,6 +23,7 @@
     background-color: black;
     color: white;
     font-family: 'Rampart One';
+    font-display: auto;
     text-align: center;
 	}
   h1 {

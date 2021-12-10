@@ -629,14 +629,14 @@ var app = (function () {
     			footer = element("footer");
     			p1 = element("p");
     			p1.textContent = "you are always one decision away from a totally different life";
-    			attr_dev(h1, "class", "svelte-1inkqoz");
+    			attr_dev(h1, "class", "svelte-13xkng9");
     			add_location(h1, file, 6, 4, 107);
-    			attr_dev(p0, "class", "svelte-1inkqoz");
+    			attr_dev(p0, "class", "svelte-13xkng9");
     			add_location(p0, file, 10, 4, 276);
-    			attr_dev(p1, "class", "svelte-1inkqoz");
+    			attr_dev(p1, "class", "svelte-13xkng9");
     			add_location(p1, file, 15, 6, 443);
     			add_location(footer, file, 14, 4, 428);
-    			attr_dev(main, "class", "svelte-1inkqoz");
+    			attr_dev(main, "class", "svelte-13xkng9");
     			add_location(main, file, 5, 0, 96);
     		},
     		l: function claim(nodes) {
