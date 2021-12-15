@@ -1,6 +1,17 @@
 <script>
   import Contact from './Contact.svelte'
   import Blog from './Blog.svelte'
+
+  import { ApolloClient, InMemoryCache, } from '@apollo/client'
+  import { setClient } from 'svelte-apollo'
+
+  const client = new ApolloClient({
+    uri: 'https://inspiring-visvesvaraya-acb082.netlify.app/',
+    cache: new InMemoryCache()
+  })
+
+  setClient(client)
+
 </script>
 
 <main>
