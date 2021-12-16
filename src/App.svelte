@@ -16,15 +16,19 @@
 
 <main>
     <h1>Hello There</h1>
-    <!-- <button type='button'>who am i?</button>
-    <button type='button'>blogging</button>
-    <button type='button'>contact me</button> -->
+    <div>
+      <p>
+        I'm <strong>Kerryn</strong>, a software engineer based in the UK.
+        See some of my work on <a href="https://github.com/KScriven" target="_blank">GitHub</a>,
+        or read more about me here.
+      </p>
+    </div>
     <p>
     <Blog></Blog>
     <Contact email={"kerryn.lloyd[at]gmail.com"}, linkedIn={"https://www.linkedin.com/in/kerrynscriven/"}></Contact>
     </p>
     <footer>
-      <p>you are always one decision away from a totally different life</p>
+      <p><strong>you are always one decision away from a totally different life</strong></p>
     </footer>
 </main>
 
@@ -40,13 +44,18 @@
   h1 {
     font-size: 5rem;
   }
-
   p {
+    font-size: 1.125rem;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
       'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
       sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+  }
+
+  a {
+    font-size: 1.5rem;
+    color: white;
   }
 
   /* button {
@@ -65,4 +74,8 @@
 			max-width: none;
 		}
 	}
+
+  footer {
+    font-size: 1.5rem;
+  }
 </style>
