@@ -20,7 +20,7 @@
       <p>
         I'm <strong>Kerryn</strong>, a software engineer based in the UK.
         See some of my work on <a href="https://github.com/KScriven/jsprojects" target="_blank">GitHub Projects</a>,
-        or read more about me on this page.
+        or read a little bit about me on this page
       </p>
     </div>
     <p>

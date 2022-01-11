@@ -474,17 +474,25 @@ var app = (function () {
     	let h2;
     	let t1;
     	let p0;
+    	let b0;
     	let t3;
     	let p1;
     	let t4;
-    	let t5;
+    	let i;
     	let t6;
-    	let a0;
     	let t7;
-    	let t8;
     	let p2;
+    	let t8;
+    	let b1;
     	let t9;
+    	let t10;
+    	let a0;
+    	let b2;
+    	let t12;
+    	let p3;
+    	let t13;
     	let a1;
+    	let b3;
 
     	const block = {
     		c: function create() {
@@ -493,29 +501,46 @@ var app = (function () {
     			h2.textContent = "How to shoot the breeze with me";
     			t1 = space();
     			p0 = element("p");
-    			p0.textContent = "Fact: I have non-existent facebook, twitter, instagram, snapchat, [fill in more here ... ] accounts";
-    			t3 = space();
+    			b0 = element("b");
+    			b0.textContent = "Fact:";
+    			t3 = text(" I have non-existent facebook, twitter, instagram, snapchat, [fill in more here ... ] accounts \n  ");
     			p1 = element("p");
-    			t4 = text("You are welcome to email me at ");
-    			t5 = text(/*email*/ ctx[0]);
-    			t6 = text(" or find me on ");
-    			a0 = element("a");
-    			t7 = text("LinkedIn");
-    			t8 = space();
+    			t4 = text("Whilst this means I am not always up to date with the latest ");
+    			i = element("i");
+    			i.textContent = "thing";
+    			t6 = text("... I am happy to sacrifice that for more focussed time spent online");
+    			t7 = space();
     			p2 = element("p");
-    			t9 = text("Learning to code is hard work so you can keep me motivated by ");
+    			t8 = text("You are welcome to email me at ");
+    			b1 = element("b");
+    			t9 = text(/*email*/ ctx[0]);
+    			t10 = text(" or find me on ");
+    			a0 = element("a");
+    			b2 = element("b");
+    			b2.textContent = "LinkedIn";
+    			t12 = space();
+    			p3 = element("p");
+    			t13 = text("Learning to code is hard work so you can keep me motivated by ");
     			a1 = element("a");
-    			a1.textContent = "buying me a coffee \\~/";
+    			b3 = element("b");
+    			b3.textContent = "buying me a coffee \\~/";
     			add_location(h2, file$2, 5, 2, 71);
     			add_location(header, file$2, 4, 0, 60);
+    			add_location(b0, file$2, 7, 3, 125);
     			add_location(p0, file$2, 7, 0, 122);
+    			add_location(i, file$2, 8, 66, 299);
+    			add_location(p1, file$2, 8, 2, 235);
+    			add_location(b1, file$2, 9, 34, 418);
+    			add_location(b2, file$2, 9, 100, 484);
     			attr_dev(a0, "href", /*linkedIn*/ ctx[1]);
-    			add_location(a0, file$2, 8, 56, 285);
-    			add_location(p1, file$2, 8, 0, 229);
+    			attr_dev(a0, "target", "_blank");
+    			add_location(a0, file$2, 9, 65, 449);
+    			add_location(p2, file$2, 9, 0, 384);
+    			add_location(b3, file$2, 10, 127, 635);
     			attr_dev(a1, "href", "https://www.buymeacoffee.com/kerryn");
     			attr_dev(a1, "target", "_blank");
-    			add_location(a1, file$2, 9, 65, 386);
-    			add_location(p2, file$2, 9, 0, 321);
+    			add_location(a1, file$2, 10, 65, 573);
+    			add_location(p3, file$2, 10, 0, 508);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -525,20 +550,28 @@ var app = (function () {
     			append_dev(header, h2);
     			insert_dev(target, t1, anchor);
     			insert_dev(target, p0, anchor);
-    			insert_dev(target, t3, anchor);
+    			append_dev(p0, b0);
+    			append_dev(p0, t3);
     			insert_dev(target, p1, anchor);
     			append_dev(p1, t4);
-    			append_dev(p1, t5);
+    			append_dev(p1, i);
     			append_dev(p1, t6);
-    			append_dev(p1, a0);
-    			append_dev(a0, t7);
-    			insert_dev(target, t8, anchor);
+    			insert_dev(target, t7, anchor);
     			insert_dev(target, p2, anchor);
-    			append_dev(p2, t9);
-    			append_dev(p2, a1);
+    			append_dev(p2, t8);
+    			append_dev(p2, b1);
+    			append_dev(b1, t9);
+    			append_dev(p2, t10);
+    			append_dev(p2, a0);
+    			append_dev(a0, b2);
+    			insert_dev(target, t12, anchor);
+    			insert_dev(target, p3, anchor);
+    			append_dev(p3, t13);
+    			append_dev(p3, a1);
+    			append_dev(a1, b3);
     		},
     		p: function update(ctx, [dirty]) {
-    			if (dirty & /*email*/ 1) set_data_dev(t5, /*email*/ ctx[0]);
+    			if (dirty & /*email*/ 1) set_data_dev(t9, /*email*/ ctx[0]);
 
     			if (dirty & /*linkedIn*/ 2) {
     				attr_dev(a0, "href", /*linkedIn*/ ctx[1]);
@@ -550,10 +583,11 @@ var app = (function () {
     			if (detaching) detach_dev(header);
     			if (detaching) detach_dev(t1);
     			if (detaching) detach_dev(p0);
-    			if (detaching) detach_dev(t3);
     			if (detaching) detach_dev(p1);
-    			if (detaching) detach_dev(t8);
+    			if (detaching) detach_dev(t7);
     			if (detaching) detach_dev(p2);
+    			if (detaching) detach_dev(t12);
+    			if (detaching) detach_dev(p3);
     		}
     	};
 
@@ -13166,7 +13200,7 @@ spurious results.`);
     			t4 = text(", a software engineer based in the UK.\n        See some of my work on ");
     			a = element("a");
     			a.textContent = "GitHub Projects";
-    			t6 = text(",\n        or read more about me on this page.");
+    			t6 = text(",\n        or read a little bit about me on this page");
     			t7 = space();
     			p1 = element("p");
     			create_component(blog.$$.fragment);
@@ -13188,12 +13222,12 @@ spurious results.`);
     			add_location(p0, file, 19, 6, 413);
     			add_location(div, file, 18, 4, 401);
     			attr_dev(p1, "class", "svelte-1gaf0el");
-    			add_location(p1, file, 25, 4, 678);
-    			add_location(strong1, file, 30, 9, 848);
+    			add_location(p1, file, 25, 4, 685);
+    			add_location(strong1, file, 30, 9, 855);
     			attr_dev(p2, "class", "svelte-1gaf0el");
-    			add_location(p2, file, 30, 6, 845);
+    			add_location(p2, file, 30, 6, 852);
     			attr_dev(footer, "class", "svelte-1gaf0el");
-    			add_location(footer, file, 29, 4, 830);
+    			add_location(footer, file, 29, 4, 837);
     			attr_dev(main, "class", "svelte-1gaf0el");
     			add_location(main, file, 16, 0, 365);
     		},
