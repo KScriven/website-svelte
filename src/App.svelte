@@ -28,7 +28,7 @@
     <Contact email={"kerryn.lloyd[at]gmail.com"}, linkedIn={"https://www.linkedin.com/in/kerrynscriven/"}></Contact>
     </p>
     <footer>
-      <p><strong>you are always one decision away from a totally different life</strong></p>
+      <strong>you are always one decision away from a totally different life</strong>
     </footer>
 </main>
 
@@ -40,9 +40,11 @@
     font-family: 'Rampart One';
     font-display: auto;
     text-align: center;
+    padding: 2em;
 	}
   h1 {
-    font-size: 5rem;
+    font-size: 3rem;
+    color: #ff3af3;
   }
   p {
     font-size: 1.125rem;
@@ -55,6 +57,10 @@
 
   a {
     font-size: 1.5rem;
+    color: white;
+  }
+
+  a:hover {
     color: white;
   }
 
@@ -74,8 +80,10 @@
 			max-width: none;
 		}
 	}
-
-  footer {
-    font-size: 1.5rem;
-  }
+footer strong {
+  margin-top: 5rem;
+  display: block;
+  font-size: 2rem;
+  text-decoration: none;
+}
 </style>

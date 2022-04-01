@@ -14,10 +14,6 @@ a:hover {
   text-decoration: underline;
 }
 
-a:visited {
-  color: #78a7a2;
-}
-
 label {
   display: block;
 }
@@ -56,10 +52,4 @@ button:not(:disabled):active {
 
 button:focus {
   border-color: #666;
-}
-
-footer p {
-  margin-top: 15rem;
-  display: block;
-  font-size: 2rem;
 }
