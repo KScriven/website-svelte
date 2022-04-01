@@ -43,8 +43,8 @@
     padding: 2em;
 	}
   h1 {
-    font-size: 3rem;
-    color: #ff3af3;
+    font-size: 4rem;
+    color: white;
   }
   p {
     font-size: 1.125rem;
